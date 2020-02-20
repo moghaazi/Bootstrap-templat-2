@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "Gsap",
+        "Lightense",
+        "btns",
+        "iconmonstr",
+        "loadbar",
+        "overlayr",
+        "ovrl",
+        "perc",
+        "progressbar",
+        "progstat",
+        "swiper",
+        "unstyled",
+        "webfonts"
+    ],
+    "html.mirrorCursorOnMatchingTag": true,
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "bracketPairColorizer.forceUniqueOpeningColor": true,
+    "bracketPairColorizer.highlightActiveScope": true,
+    "editor.matchBrackets": "never"
+}
