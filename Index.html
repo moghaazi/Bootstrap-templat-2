@@ -191,7 +191,7 @@
         <div class="container">
 
             <!-- Header ======================= -->
-            <h2 class="highlight-header" data-aos="zoom-in" data-aos-delay="100">Featured work</h2>
+            <h2 class="highlight-header" data-aos="zoom-in">Featured work</h2>
             <p data-aos="zoom-in">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
             <!-- Links ======================= -->
@@ -220,75 +220,81 @@
 
 
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <div class="dropdownn">
-                <button class="dropbtn">More
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-        </nav>
+
+        <!-- =============== Html ===============================================  -->
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
 
 
+        <!-- =============== Style ===============================================  -->
+        <style>
+            .dots {
+                width: 3em;
+                height: 3em;
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                justify-items: center;
+                align-items: center;
+                cursor: pointer;
+                transition: .1s;
+                font-size: 65px;
+            }
 
+            /* Divs Style */
+            .dots>div {
+                width: 0.5em;
+                height: 0.5em;
+                background-color: #3cefff;
+                border-radius: 50%;
+                animation: fade 1.5s alternate ease-in-out infinite;
+            }
 
-        <img src="https://picsum.photos/400/400/?random=1">
+            /* Divs animation */
+            .dots>div:nth-of-type(2),
+            .dots>div:nth-of-type(4) {
+                animation-delay: 0.25s;
+            }
 
+            .dots>div:nth-of-type(3),
+            .dots>div:nth-of-type(5),
+            .dots>div:nth-of-type(7) {
+                animation-delay: 0.5s;
+            }
 
+            .dots>div:nth-of-type(6),
+            .dots>div:nth-of-type(8) {
+                animation-delay: 0.75s;
+            }
 
+            .dots>div:nth-of-type(9) {
+                animation-delay: 1s;
+            }
 
+            /* Active */
+            .dots:active {
+                transform: scale(.75);
+                transition: .1s;
 
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            /* Animation */
+            @keyframes fade {
+                to {
+                    opacity: 0.2;
+                }
+            }
+        </style>
 
 
 
