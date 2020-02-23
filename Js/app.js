@@ -66,7 +66,7 @@ AOS.init();
 // ============== SCROLL BUTTON ============================================================
 
 // Get the button
-var TopBtn = document.getElementById(`scroll-btn`);
+let TopBtn = document.querySelector('#scroll-btn');
 
 // On scroll down 500px, show the button
 window.onscroll = () => (window.scrollY > 500 ? (TopBtn.style.display = `block`) : (TopBtn.style.display = `none`));
@@ -83,4 +83,23 @@ $(function() {
 		$(`.features-work img`).hide(); // Hide all content
 		$(`.` + $(this).data(`class`)).show(); // Show selected content
 	});
+});
+
+// ============== Testimonials ============================================================
+var swiper = new Swiper('.swiper2', {
+	loop: true,
+
+	// Auto play ===================
+	autoplay: {
+		delay: 3000
+	},
+
+	pagination: {
+		el: '.swiper-pagination2'
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next2',
+		prevEl: '.swiper-button-prev2'
+	}
 });
